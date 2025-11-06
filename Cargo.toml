@@ -1,0 +1,20 @@
+[workspace]
+members = ["nano-block-ebpf", "nano-block"]
+
+resolver = "2"
+
+[workspace.package]
+authors = ["dhruvsol"]
+edition = "2024"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/dhruvsol/NanoBlock"
+
+
+[workspace.dependencies]
+aya = { git = "https://github.com/aya-rs/aya", default-features = false }
+aya-ebpf = { git = "https://github.com/aya-rs/aya", default-features = false }
+aya-log = { git = "https://github.com/aya-rs/aya", default-features = false }
+aya-log-ebpf = { git = "https://github.com/aya-rs/aya", default-features = false }
+network-types = "0.1.0"
+tokio = { version = "1.0", features = ["full"] }
+thiserror = { version = "1.0", default-features = false }
